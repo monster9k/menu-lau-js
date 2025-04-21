@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "item": "Lẩu Nấm",
+    "price": 120,
+    "image": "images/lau-nam.jpg",
+    "rate": 4.8,
+    "note": "Nước lẩu thanh đạm, thích hợp cho người ăn chay và yêu thích nấm."
+  },
+  {
+    "id": 2,
+    "item": "Lẩu Tom Yum",
+    "price": 130,
+    "image": "images/lau-tom-yum.jpg",
+    "rate": 4.6,
+    "note": "Vị chua cay đậm đà theo phong cách Thái Lan."
+  },
+  {
+    "id": 3,
+    "item": "Lẩu Bulgogi Hàn Quốc",
+    "price": 140,
+    "image": "images/lau-bulgogi.jpg",
+    "rate": 4.7,
+    "note": "Lẩu bò Bulgogi ngọt dịu, thơm vị thịt và rau củ."
+  },
+  {
+    "id": 4,
+    "item": "Lẩu Miso Nhật Bản",
+    "price": 135,
+    "image": "images/lau-miso.jpg",
+    "rate": 4.5,
+    "note": "Vị lẩu đậm đà từ tương miso, mềm dịu và dễ ăn."
+  },
+  {
+    "id": 5,
+    "item": "Lẩu Xí Quách",
+    "price": 125,
+    "image": "images/lau-xi-quach.jpg",
+    "rate": 4.9,
+    "note": "Nước dùng từ xương hầm đậm vị, cực kỳ bổ dưỡng."
+  }
+]
