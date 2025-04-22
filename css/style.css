@@ -34,6 +34,13 @@ button:hover {
 
 /*---------------- menu-list ----------------*/
 
+h2.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+}
+
 .menu-list {
   display: flex;
   flex-wrap: wrap;

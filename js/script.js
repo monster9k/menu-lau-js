@@ -1,5 +1,3 @@
-let cart = [];
-
 fetch("data/menu_lau.json") // Không dùng ../
   .then((res) => res.json()) // nhớ parse JSON
   .then((menu) => {
@@ -17,7 +15,7 @@ fetch("data/menu_lau.json") // Không dùng ../
               class="image_hotpot"
             />
             <p>${item.note}</p>
-            <p>Giá: ${item.price.toLocaleString()}</p>
+            <p>Giá: ${item.price.toLocaleString()}.000</p>
             <button>Add to cart</button>
           </div>
         `;
