@@ -1,3 +1,5 @@
+import { addToCart } from "./cart.js";
+
 fetch("data/menu_lau.json") // Không dùng ../
   .then((res) => res.json()) // nhớ parse JSON
   .then((menu) => {
@@ -16,11 +18,19 @@ fetch("data/menu_lau.json") // Không dùng ../
             />
             <p>${item.note}</p>
             <p>Giá: ${item.price.toLocaleString()}.000</p>
-            <button>Add to cart</button>
+            <button class="add-btn" data-id="${item.id}">Add to cart</button>
           </div>
         `;
 
       container.innerHTML += HTML;
+    });
+
+    document.querySelectorAll(".add-btn").forEach((button) => {
+      button.addEventListener("click", () => {
+        const id = parseInt(button.dataset.id);
+        const selectedItem = menu.find((item) => item.id === id);
+        if (selectedItem) addToCart(selectedItem);
+      });
     });
   })
   .catch((error) => {
