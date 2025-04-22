@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "item": "Lẩu Nấm",
+    "name": "Lẩu Nấm",
     "price": 120,
     "image": "images/lau-nam.jpg",
     "rate": 4.8,
@@ -9,7 +9,7 @@
   },
   {
     "id": 2,
-    "item": "Lẩu Tom Yum",
+    "name": "Lẩu Tom Yum",
     "price": 130,
     "image": "images/lau-tom-yum.jpg",
     "rate": 4.6,
@@ -17,7 +17,7 @@
   },
   {
     "id": 3,
-    "item": "Lẩu Bulgogi Hàn Quốc",
+    "name": "Lẩu Bulgogi Hàn Quốc",
     "price": 140,
     "image": "images/lau-bulgogi.jpg",
     "rate": 4.7,
@@ -25,7 +25,7 @@
   },
   {
     "id": 4,
-    "item": "Lẩu Miso Nhật Bản",
+    "name": "Lẩu Miso Nhật Bản",
     "price": 135,
     "image": "images/lau-miso.jpg",
     "rate": 4.5,
@@ -33,7 +33,7 @@
   },
   {
     "id": 5,
-    "item": "Lẩu Xí Quách",
+    "name": "Lẩu Xí Quách",
     "price": 125,
     "image": "images/lau-xi-quach.jpg",
     "rate": 4.9,
