@@ -18,15 +18,18 @@ fetch("data/menu_lau.json") // Không dùng ../
             />
             <p>${item.note}</p>
             <p>Giá: ${item.price.toLocaleString()}.000</p>
-            <div class="button_quantity">
+            <div class="button_quantity button-quantity-${item.id}">
               <button class="add-btn" data-id="${item.id}">Add to cart</button>
-              <select id="quantity" name="quantity" class="select_quantity">
+              <select id="quantity" name="quantity" class="select_quantity select-quantity-${
+                item.id
+              }">
               <option value="1">1</option>
               <option value="2">2</option>
               <option value="3">3</option>
               <option value="4">4</option>
               <option value="5">5</option>
               </select>
+              <p>Added</p>
             </div>
           </div>
         `;
@@ -38,6 +41,12 @@ fetch("data/menu_lau.json") // Không dùng ../
       button.addEventListener("click", () => {
         const id = parseInt(button.dataset.id);
         const selectedItem = menu.find((item) => item.id === id);
+        document.querySelector(`.button-quantity-${id}`).classList.add("Added");
+        setTimeout(() => {
+          document
+            .querySelector(`.button-quantity-${id}`)
+            .classList.remove("Added");
+        }, 2000);
         if (selectedItem) addToCart(selectedItem);
       });
     });

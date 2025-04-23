@@ -42,7 +42,8 @@ nav a {
 
 nav a:hover,
 nav button:hover {
-  background-color: #ddd;
+  font-weight: bold;
+  text-decoration: underline;
 }
 
 button {
@@ -104,4 +105,15 @@ h2.title {
   border-radius: 5px;
   cursor: pointer;
   font-size: 1rem;
+}
+
+.button_quantity p {
+  margin: 0;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.button_quantity.Added p {
+  margin: 16px;
+  opacity: 1;
 }
