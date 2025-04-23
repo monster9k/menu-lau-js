@@ -1,6 +1,6 @@
 body {
-  background-color: #1a1a1a; /* Màu nền đen */
-  color: #fff; /* Chữ màu trắng để nổi bật trên nền đen */
+  background-color: #1a1a1a;
+  color: #fff;
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
@@ -10,7 +10,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #c0392b;
+  background-color: #b22222; /* đỏ đậm */
   padding: 30px 20px;
   text-align: center;
   color: white;
@@ -20,7 +20,7 @@ header {
 }
 
 header h1 {
-  color: #fff; /* Màu chữ trắng */
+  color: #fff;
   font-size: 2.5rem;
   position: absolute;
   left: 50%;
@@ -38,26 +38,29 @@ nav a {
   text-decoration: none;
   color: white;
   font-size: 20px;
+  transition: 0.3s;
 }
 
 nav a:hover,
 nav button:hover {
   font-weight: bold;
   text-decoration: underline;
+  color: #ff4d4d;
 }
 
 button {
-  background-color: #d35400; /* Nút màu cam sáng */
+  background-color: #cc3300;
   color: #fff;
   padding: 10px 20px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
   font-size: 1rem;
+  transition: background-color 0.3s ease;
 }
 
 button:hover {
-  background-color: #e67e22; /* Màu sáng hơn khi hover */
+  background-color: #e25822; /* sáng hơn */
 }
 
 /*---------------- menu-list ----------------*/
@@ -67,6 +70,8 @@ h2.title {
   justify-content: center;
   align-items: center;
   height: 100px;
+  font-size: 2rem;
+  color: white;
 }
 
 .menu-list {
@@ -77,16 +82,22 @@ h2.title {
 }
 
 .item {
-  width: 300px; /* Độ rộng của mỗi món ăn */
-  border: 1px solid #ccc;
+  width: 300px;
+  border: 1px solid white; /* viền đỏ nâu */
   border-radius: 10px;
   padding: 20px;
   text-align: center;
-  background-color: black;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #2b2b2b; /* xám đen */
+  color: white;
+  box-shadow: 0 0 15px rgba(255, 69, 0, 0.2); /* bóng đỏ cam */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  transition: transform 0.3s ease;
+}
+
+.item:hover {
+  transform: scale(1.03);
 }
 
 .image_hotpot {
@@ -94,17 +105,22 @@ h2.title {
   height: 200px;
   object-fit: cover;
   border-radius: 8px;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.1);
 }
 
 .select_quantity {
-  background-color: #d35400; /* Nút màu cam sáng */
+  background-color: #cc3300;
   color: #fff;
   padding: 10px 20px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
   font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.select_quantity:hover {
+  background-color: #e25822;
 }
 
 .button_quantity p {
@@ -116,4 +132,5 @@ h2.title {
 .button_quantity.Added p {
   margin: 16px;
   opacity: 1;
+  color: #ff4d4d;
 }
