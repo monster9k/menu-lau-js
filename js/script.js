@@ -47,7 +47,13 @@ fetch("data/menu_lau.json") // Không dùng ../
             .querySelector(`.button-quantity-${id}`)
             .classList.remove("Added");
         }, 2000);
-        if (selectedItem) addToCart(selectedItem);
+
+        const selectQuantity = document.querySelector(
+          `.select-quantity-${id}`
+        ).value;
+
+        const sQuantity = Number(selectQuantity);
+        if (selectedItem) addToCart(selectedItem, sQuantity);
       });
     });
   })
