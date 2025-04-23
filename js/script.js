@@ -18,7 +18,16 @@ fetch("data/menu_lau.json") // Không dùng ../
             />
             <p>${item.note}</p>
             <p>Giá: ${item.price.toLocaleString()}.000</p>
-            <button class="add-btn" data-id="${item.id}">Add to cart</button>
+            <div class="button_quantity">
+              <button class="add-btn" data-id="${item.id}">Add to cart</button>
+              <select id="quantity" name="quantity" class="select_quantity">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              </select>
+            </div>
           </div>
         `;
 
