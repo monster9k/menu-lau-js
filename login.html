@@ -17,7 +17,7 @@
     <div class="container" id="container">
       <!-- Sign up -->
       <div class="form-container sign-up">
-        <form>
+        <div class="form">
           <h1>Create Account</h1>
           <div class="social-icons">
             <a href="#!" class="icon"><i class="fa-brands fa-github"></i></a>
@@ -29,14 +29,15 @@
           </div>
           <span>or use email for registeration</span>
           <input type="text" id="reg-username" placeholder="Name" />
-          <input type="email" id="reg-password" placeholder="Email" />
-          <input type="password" placeholder="Password" />
-          <button>Sign up</button>
-        </form>
+          <input type="email" id="reg-Email" placeholder="Email" />
+          <input type="password" id="reg-password" placeholder="Password" />
+          <button onclick="register()">Sign up</button>
+          <p class="messenger"></p>
+        </div>
       </div>
       <!-- Sign in -->
       <div class="form-container sign-in">
-        <form>
+        <div class="form">
           <h1>Sign in</h1>
           <div class="social-icons">
             <a href="#" class="icon"
@@ -49,12 +50,13 @@
             ></a>
           </div>
           <span>or use email for registeration</span>
-          <input type="text" placeholder="Name" />
-          <input type="email" placeholder="Email" />
-          <input type="password" placeholder="Password" />
+          <input type="text" id="login-username" placeholder="Name" />
+          <input type="email" id="login-Email" placeholder="Email" />
+          <input type="password" id="login-password" placeholder="Password" />
           <a href="#!">Forget Your Password</a>
-          <button>Sign in</button>
-        </form>
+          <button onclick="login()">Sign in</button>
+          <p class="message"></p>
+        </div>
       </div>
       <!-- toogle -->
       <div class="toggle-container">

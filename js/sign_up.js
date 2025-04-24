@@ -9,3 +9,40 @@ registerBtn.addEventListener("click", () => {
 loginBtn.addEventListener("click", () => {
   container.classList.remove("active");
 });
+
+function register() {
+  const username = document.getElementById("reg-username").value;
+  const password = document.getElementById("reg-password").value;
+
+  if (username === "" || password === "") {
+    document.querySelector(".messenger").innerHTML = "Vui lòng nhập thông tin";
+    return;
+  }
+
+  if (password.length < 6) {
+    document.getElementById("message").innerText =
+      "Mật khẩu phải ít nhất 6 ký tự!";
+    return;
+  }
+
+  if (localStorage.getItem(username)) {
+    document.querySelector(".messenger").innerHTML = "Tài khoản đã tồn tại";
+  } else {
+    localStorage.setItem(username, password);
+    document.querySelector(".messenger").innerHTML = "Đăng kí thành công";
+  }
+}
+
+function login() {
+  const username = document.getElementById("login-username").value;
+  const password = document.getElementById("login-password").value;
+
+  const savedPassword = localStorage.getItem(username);
+
+  if (savedPassword && password === savedPassword) {
+    document.querySelector(".message").innerText = "Đăng nhập thành công!";
+  } else {
+    document.querySelector(".message").innerText =
+      "Sai tên, mật khẩu hoặc chưa đăng kí tài khoản";
+  }
+}
