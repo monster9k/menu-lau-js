@@ -67,11 +67,26 @@ window.addEventListener("DOMContentLoaded", () => {
 
   if (currentUser) {
     userArea.innerHTML = `
-      <div class="user-info">
-        <img src="/images/avatar.jpg" alt="Avatar" style="width: 32px; height: 32px; border-radius: 50%; vertical-align: middle;">
-        <span style="margin-left: 8px;">${currentUser}</span>
-        <button onclick="logout()" style="margin-left: 12px;">Đăng xuất</button>
+      <div class="user-menu">
+        <div class="ava-menu" id="ava-menu">
+          <img src="/images/avatar.jpg" id="avatar" class="avatar" alt="Avatar">
+          <span style="margin-left: 8px;">Tài khoản</span>
+        </div>
+          <ul class="dropdown" id="dropdown">
+                <li id="username">Giỏ hàng</li>
+                <li><a href="history.html">Lịch sử đã mua</a></li>
+                <li><a href="#" onclick="logout()">Đăng xuất</a></li>
+          </ul>
       </div>
     `;
+
+    const avaMenu = document.getElementById("ava-menu");
+    const dropdown = document.getElementById("dropdown");
+
+    avaMenu.addEventListener("click", () => {
+      const isDropdownVisible = dropdown.style.display === "block";
+
+      dropdown.style.display = isDropdownVisible ? "none" : "block";
+    });
   }
 });

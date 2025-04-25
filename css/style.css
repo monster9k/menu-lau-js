@@ -6,6 +6,16 @@ body {
   padding: 0;
 }
 
+ul {
+  list-style: none; /* Xóa dấu chấm hoặc ký tự mặc định ở trước các item */
+  padding: 0; /* Xóa khoảng cách mặc định bên trong */
+  margin: 0; /* Xóa khoảng cách mặc định bên ngoài */
+}
+
+li {
+  margin: 0; /* Loại bỏ khoảng cách giữa các item trong list */
+}
+
 header {
   display: flex;
   justify-content: space-between;
@@ -63,6 +73,47 @@ button:hover {
   background-color: #e25822; /* sáng hơn */
 }
 
+.ava-menu {
+  width: 150px;
+  display: flex;
+  justify-content: center; /* ngang */
+  align-items: center;
+  gap: 10px;
+  border: solid 3px white;
+  border-radius: 10px;
+  position: relative;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+ul {
+  border: solid white;
+  border-radius: 10px;
+  border-top: none;
+}
+
+.user-menu ul {
+  width: 150px;
+  position: absolute;
+  background-color: #333;
+  list-style: none;
+  top: 42;
+  display: none;
+}
+
+.dropdown li {
+  padding: 10px;
+  border-bottom: 1px solid #fff;
+}
+
+.dropdown li:hover {
+  background-color: #444;
+}
 /*---------------- menu-list ----------------*/
 
 h2.title {
