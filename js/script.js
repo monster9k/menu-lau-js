@@ -60,3 +60,18 @@ fetch("data/menu_lau.json") // Không dùng ../
   .catch((error) => {
     console.log("Lỗi khi tải file JSON:", error);
   });
+
+window.addEventListener("DOMContentLoaded", () => {
+  const currentUser = localStorage.getItem("currentUser");
+  const userArea = document.getElementById("user-area");
+
+  if (currentUser) {
+    userArea.innerHTML = `
+      <div class="user-info">
+        <img src="/images/avatar.jpg" alt="Avatar" style="width: 32px; height: 32px; border-radius: 50%; vertical-align: middle;">
+        <span style="margin-left: 8px;">${currentUser}</span>
+        <button onclick="logout()" style="margin-left: 12px;">Đăng xuất</button>
+      </div>
+    `;
+  }
+});

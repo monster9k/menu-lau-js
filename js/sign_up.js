@@ -29,6 +29,7 @@ function register() {
     document.querySelector(".messenger").innerHTML = "Tài khoản đã tồn tại";
   } else {
     localStorage.setItem(username, password);
+    localStorage.setItem("currentUser", username);
     document.querySelector(".messenger").innerHTML = "Đăng kí thành công";
 
     setTimeout(() => {
@@ -45,6 +46,7 @@ function login() {
 
   if (savedPassword && password === savedPassword) {
     document.querySelector(".message").innerText = "Đăng nhập thành công!";
+    localStorage.setItem("currentUser", username);
 
     setTimeout(() => {
       window.location.href = "/index.html";
