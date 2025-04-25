@@ -20,7 +20,7 @@ function register() {
   }
 
   if (password.length < 6) {
-    document.getElementById("message").innerText =
+    document.getElementById("messenger").innerText =
       "Mật khẩu phải ít nhất 6 ký tự!";
     return;
   }
@@ -30,6 +30,10 @@ function register() {
   } else {
     localStorage.setItem(username, password);
     document.querySelector(".messenger").innerHTML = "Đăng kí thành công";
+
+    setTimeout(() => {
+      window.location.href = "/index.html";
+    }, 1000);
   }
 }
 
