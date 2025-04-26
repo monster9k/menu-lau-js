@@ -61,6 +61,11 @@ fetch("data/menu_lau.json") // Không dùng ../
     console.log("Lỗi khi tải file JSON:", error);
   });
 
+function logOut() {
+  localStorage.removeItem("currentUser");
+  location.reload();
+}
+
 window.addEventListener("DOMContentLoaded", () => {
   const currentUser = localStorage.getItem("currentUser");
   const userArea = document.getElementById("user-area");
@@ -73,9 +78,11 @@ window.addEventListener("DOMContentLoaded", () => {
           <span style="margin-left: 8px;">Tài khoản</span>
         </div>
           <ul class="dropdown" id="dropdown">
-                <li id="username">Giỏ hàng</li>
-                <li><a href="history.html">Lịch sử đã mua</a></li>
-                <li><a href="#" onclick="logout()">Đăng xuất</a></li>
+              <li id="user_name" style="font-weight: bold; pointer-events: none;">👤 ${currentUser}</li>
+              <li><a href="#">🏠 Trang chủ</a></li>
+              <li id="Gio_hang">🛒 Giỏ hàng</li>
+              <li><a href="#">🕓 Lịch sử đã mua</a></li>
+              <li><a href="#" onclick="logOut()">🚪 Đăng xuất</a></li>
           </ul>
       </div>
     `;
@@ -87,6 +94,12 @@ window.addEventListener("DOMContentLoaded", () => {
       const isDropdownVisible = dropdown.style.display === "block";
 
       dropdown.style.display = isDropdownVisible ? "none" : "block";
+    });
+
+    const logOutLink = document.querySelector("#dropdown li:last-child a");
+    logOutLink.addEventListener("click", (e) => {
+      e.preventDefault();
+      logOut();
     });
   }
 });
