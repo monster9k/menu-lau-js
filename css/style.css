@@ -123,6 +123,84 @@ ul {
   cursor: pointer;
 }
 
+/*---------------- bars ----------------*/
+
+.menu-toogle {
+  position: fixed;
+  top: 25px;
+  left: 20px;
+  font-size: 24px;
+  z-index: 2;
+  cursor: pointer;
+  transition: transform 0.3s;
+  color: black;
+}
+
+.menu-bars {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 260px;
+  height: 100%;
+  background-color: white;
+  padding: 20px;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  transition: transform 0.3s;
+  color: black;
+  transform: translateX(-100%);
+}
+
+.menu-header {
+  font-size: 20px;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #ccc;
+  color: #333;
+}
+
+.menu-header h2 {
+  margin: 0;
+  text-align: left;
+  padding-left: 10px;
+}
+
+.menu-item {
+  display: flex;
+  align-items: center;
+  padding: 14px;
+  border-radius: 8px;
+  transition: all 0.1s;
+  cursor: pointer;
+  color: #333;
+}
+
+.menu-item:hover {
+  background-color: #eee;
+}
+
+.menu-item i {
+  text-align: center;
+  width: 20px;
+  font-size: 22px;
+}
+
+.menu-item span {
+  font-weight: 500;
+  margin-left: 20px;
+}
+
+#menu-toogle:checked ~ .menu-bars {
+  transform: translateX(0);
+  box-shadow: 0 0 20px rbga(0, 0, 0, 0.2);
+}
+
+#menu-toogle:checked ~ .menu-toogle {
+  transform: translateX(200px);
+  color: #333;
+}
 /*---------------- menu-list ----------------*/
 
 h2.title {

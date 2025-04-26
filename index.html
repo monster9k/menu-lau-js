@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Menu</title>
     <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
   </head>
   <body>
     <!--Header-->
@@ -16,6 +20,43 @@
           <a href="login.html">Đăng ký</a>
         </div>
       </nav>
+
+      <!--bars-->
+      <input type="checkbox" id="menu-toogle" hidden />
+      <label for="menu-toogle" class="menu-toogle">
+        <i class="fa-solid fa-bars"></i>
+      </label>
+
+      <div class="menu-bars">
+        <div class="menu-header">
+          <h2>Menu</h2>
+        </div>
+
+        <div class="menu-item">
+          <i class="fa-solid fa-bowl-food"></i>
+          <span>Hotpot</span>
+        </div>
+
+        <div class="menu-item">
+          <i class="fa-solid fa-bottle-water"></i>
+          <span>Water</span>
+        </div>
+
+        <div class="menu-item">
+          <i class="fa-solid fa-utensils"></i>
+          <span>Side dish</span>
+        </div>
+
+        <div class="menu-item">
+          <i class="fa-solid fa-cart-shopping"></i>
+          <span>Cart</span>
+        </div>
+
+        <div class="menu-item">
+          <i class="fa-solid fa-circle-question"></i>
+          <span>Help</span>
+        </div>
+      </div>
     </header>
 
     <!--main-->
