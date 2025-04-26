@@ -81,7 +81,6 @@ window.addEventListener("DOMContentLoaded", () => {
               <li id="user_name" style="font-weight: bold; pointer-events: none;">👤 ${currentUser}</li>
               <li><a href="#">🏠 Trang chủ</a></li>
               <li id="Gio_hang">🛒 Giỏ hàng</li>
-              <li><a href="#">🕓 Lịch sử đã mua</a></li>
               <li><a href="#" onclick="logOut()">🚪 Đăng xuất</a></li>
           </ul>
       </div>

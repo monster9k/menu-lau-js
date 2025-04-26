@@ -127,6 +127,10 @@ ul {
   cursor: pointer;
 }
 
+.dropdown a {
+  padding: 5px;
+}
+
 /*---------------- bars ----------------*/
 
 .menu-toogle {
@@ -206,6 +210,9 @@ ul {
 }
 
 /*---------------- menu-list ----------------*/
+main {
+  margin-top: 140px;
+}
 
 h2.title {
   display: flex;
