@@ -71,11 +71,14 @@ window.addEventListener("DOMContentLoaded", () => {
   const userArea = document.getElementById("user-area");
 
   if (currentUser) {
+    const fullName = currentUser.trim();
+    const nameParts = fullName.split(" ");
+    const lastTwo = nameParts.slice(-2).join(" ");
     userArea.innerHTML = `
       <div class="user-menu">
         <div class="ava-menu" id="ava-menu">
           <img src="/images/avatar.jpg" id="avatar" class="avatar" alt="Avatar">
-          <span style="margin-left: 8px;">Tài khoản</span>
+          <span style="margin-left: 8px;">${lastTwo}</span>
         </div>
           <ul class="dropdown" id="dropdown">
               <li id="user_name" style="font-weight: bold; pointer-events: none;">👤 ${currentUser}</li>
