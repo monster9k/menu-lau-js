@@ -11,6 +11,10 @@ body {
   --main-color-2: white;
 }
 
+a {
+  text-decoration: none;
+}
+
 ul {
   list-style: none; /* Xóa dấu chấm hoặc ký tự mặc định ở trước các item */
   padding: 0; /* Xóa khoảng cách mặc định bên trong */
@@ -287,4 +291,34 @@ h2.title {
   margin: 16px;
   opacity: 1;
   color: #be3333;
+}
+
+.cart-link {
+  color: var(--main-color);
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.cart-icon {
+  width: 50px;
+}
+
+.cart-text {
+  margin-top: 12px;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.cart-quantity {
+  color: var(--main-color);
+  font-size: 16px;
+  font-weight: 700;
+
+  position: absolute;
+  top: 12px;
+  left: 16px;
+
+  width: 26px;
+  text-align: center;
 }
