@@ -1,4 +1,8 @@
-let cart = [];
+export let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+function saveToStorage() {
+  localStorage.setItem("cart", JSON.stringify(cart));
+}
 
 export function addToCart(item, sQuantity) {
   let quantity;
@@ -9,4 +13,5 @@ export function addToCart(item, sQuantity) {
     cart.push({ ...item, quantity: sQuantity });
   }
   console.log(cart);
+  saveToStorage();
 }

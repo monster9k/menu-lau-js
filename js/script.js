@@ -77,7 +77,7 @@ window.addEventListener("DOMContentLoaded", () => {
     userArea.innerHTML = `
       <div class="menu-all">
           <div class="menu-cart-link">
-        <a class="cart-link header-link" href="cart.html">
+        <a class="cart-link header-link" href="checkout.html">
           <img class="cart-icon" src="images/cart-icon.png" />
           <div class="cart-quantity js-cart-quantity">0</div>
           <div class="cart-text">Cart</div>

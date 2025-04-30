@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CheckOut</title>
+
+    <link rel="stylesheet" href="css/checkout/checkout.css" />
+  </head>
+  <body>
+    <!-- logo -->
+    <div class="logo-container">
+      <a href="index.html">
+        <img src="https://example.com/logo.png" alt="Logo" class="logo" />
+      </a>
+    </div>
+
+    <div class="payment-summary-title">Order Summary</div>
+
+    <div class="payment-summary-row">
+      <div>Items (5):</div>
+      <div class="payment-summary-money">115.000 VND</div>
+    </div>
+
+    <div class="payment-summary-row subtotal-row">
+      <div>Total before tax:</div>
+      <div class="payment-summary-money">115.000 VND</div>
+    </div>
+
+    <div class="payment-summary-row">
+      <div>Estimated tax (10%):</div>
+      <div class="payment-summary-money">15.000 VND</div>
+    </div>
+
+    <div class="payment-summary-row total-row">
+      <div>Order total:</div>
+      <div class="payment-summary-money">130.000 VND</div>
+    </div>
+
+    <button class="place-order-button button-primary">Place your order</button>
+
+    <div class="ordered-items-container">
+      <div class="ordered-items-title">Your Selected Items</div>
+      <div class="ordered-items-list ordered-items-list-js"></div>
+    </div>
+  </body>
+
+  <script type="module" src="js/payment.js"></script>
+</html>
