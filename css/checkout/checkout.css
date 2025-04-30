@@ -1,0 +1,156 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f7f7f8;
+  padding: 40px;
+  color: #333;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.payment-summary-title {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  text-align: center;
+  color: #2c3e50;
+}
+
+.payment-summary-row {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.subtotal-row {
+  font-weight: bold;
+}
+
+.total-row {
+  font-weight: bold;
+  font-size: 20px;
+  color: #e74c3c;
+}
+
+.payment-summary-money {
+  font-weight: bold;
+}
+
+.place-order-button {
+  margin-top: 30px;
+  padding: 12px 20px;
+  background-color: #be3333;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s ease;
+}
+
+.place-order-button:hover {
+  background-color: #e25822;
+}
+
+/* Responsive nhỏ gọn hơn */
+@media (max-width: 500px) {
+  body {
+    padding: 20px;
+  }
+
+  .payment-summary-title {
+    font-size: 22px;
+  }
+
+  .total-row {
+    font-size: 18px;
+  }
+
+  .place-order-button {
+    font-size: 14px;
+  }
+}
+
+/* display */
+
+.ordered-items-container {
+  margin-top: 80px;
+}
+
+.ordered-items-title {
+  font-size: 22px;
+  font-weight: bold;
+  color: #2c3e50;
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.ordered-items-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.ordered-item {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  padding: 12px;
+  border-radius: 8px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.05);
+  position: relative;
+}
+
+.ordered-item-image {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-right: 16px;
+}
+
+.ordered-item-info {
+  flex: 1;
+}
+
+.ordered-item-name {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+
+.ordered-item-quantity {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 6px;
+}
+
+.qty-btn {
+  width: 26px;
+  height: 26px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  background-color: #be3333;
+  cursor: pointer;
+  border-radius: 4px;
+  color: #fff;
+}
+
+.remove-btn {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  background: #be3333;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  font-size: 25px;
+  line-height: 1;
+}
