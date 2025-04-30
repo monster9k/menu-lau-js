@@ -75,6 +75,15 @@ window.addEventListener("DOMContentLoaded", () => {
     const nameParts = fullName.split(" ");
     const lastTwo = nameParts.slice(-2).join(" ");
     userArea.innerHTML = `
+      <div class="menu-all">
+          <div class="menu-cart-link">
+        <a class="cart-link header-link" href="checkout.html">
+          <img class="cart-icon" src="images/cart-icon.png" />
+          <div class="cart-quantity js-cart-quantity">0</div>
+          <div class="cart-text">Cart</div>
+        </a>
+      </div>
+
       <div class="user-menu">
         <div class="ava-menu" id="ava-menu">
           <img src="/images/avatar.jpg" id="avatar" class="avatar" alt="Avatar">
@@ -87,6 +96,8 @@ window.addEventListener("DOMContentLoaded", () => {
               <li><a href="#" onclick="logOut()">🚪 Đăng xuất</a></li>
           </ul>
       </div>
+      </div> 
+      
     `;
 
     const avaMenu = document.getElementById("ava-menu");
