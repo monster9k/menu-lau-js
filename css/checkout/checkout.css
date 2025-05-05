@@ -78,11 +78,11 @@ body {
 .logo-container {
   position: absolute;
   top: 10px;
-  left: 10px;
+  margin-left: auto;
 }
 
 .logo {
-  width: 50px;
+  width: 100px;
   height: auto;
 }
 

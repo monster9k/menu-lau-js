@@ -30,3 +30,5 @@ export function renderOrderSummary() {
 }
 
 renderOrderSummary();
+
+export function renderPaymentSummary() {}
