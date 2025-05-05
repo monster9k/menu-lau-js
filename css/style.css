@@ -130,6 +130,7 @@ button:hover {
   border: solid 3px white;
   border-radius: 10px;
   position: relative;
+  cursor: pointer;
 }
 
 .avatar {

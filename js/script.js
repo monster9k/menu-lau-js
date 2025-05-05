@@ -1,4 +1,15 @@
 import { addToCart } from "./cart.js";
+import { getCart } from "./cart.js";
+
+function updateCartQuantity() {
+  const cart = getCart();
+  let cartQuantity = 0;
+
+  cart.forEach((cartItem) => {
+    cartQuantity += cartItem.quantity;
+  });
+  document.querySelector(".js-cart-quantity").innerHTML = cartQuantity;
+}
 
 fetch("data/menu_lau.json") // Không dùng ../
   .then((res) => res.json()) // nhớ parse JSON
@@ -54,6 +65,7 @@ fetch("data/menu_lau.json") // Không dùng ../
 
         const sQuantity = Number(selectQuantity);
         if (selectedItem) addToCart(selectedItem, sQuantity);
+        updateCartQuantity();
       });
     });
   })
