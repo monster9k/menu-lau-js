@@ -10,7 +10,7 @@ export function addToCart(item, sQuantity) {
   if (exists) {
     exists.quantity += sQuantity;
   } else {
-    cart.push({ ...item, quantity: sQuantity });
+    cart.push({ id: item.id, quantity: sQuantity });
   }
   console.log(cart);
   saveToStorage();
