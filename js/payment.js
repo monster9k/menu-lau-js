@@ -1,44 +1,9 @@
-import { cart } from "./cart.js";
+import { getCart, removeFromCart } from "./cart.js";
 import { getProduct } from "./product.js";
 import { formatCurrency } from "./utils/money.js";
 
-console.log(cart);
-export async function renderOrderSummary() {
-  let carSummaryHTML = "";
-
-  for (const cartItem of cart) {
-    const productId = cartItem.id;
-    const matchingProduct = await getProduct(productId);
-
-    carSummaryHTML += `
-      <div class="ordered-item">
-        <img
-          src="${matchingProduct.image}"
-          alt="${matchingProduct.name}"
-          class="ordered-item-image"
-        />
-        <div class="ordered-item-info">
-          <div class="ordered-item-name">${matchingProduct.name}</div>
-          <div class="ordered-item-quantity">
-            <button class="qty-btn">-</button>
-            <span>${cartItem.quantity}</span>
-            <button class="qty-btn">+</button>
-          </div>
-          <div class="ordered-item-price">
-            Giá: ${matchingProduct.price.toLocaleString()}.000 VND
-          </div>
-        </div>
-        <button class="remove-btn">-</button>
-      </div>
-    `;
-  }
-
-  document.querySelector(".ordered-items-list-js").innerHTML = carSummaryHTML;
-}
-
-renderOrderSummary();
-
 export async function renderPaymentSummary() {
+  const cart = getCart();
   let quantities = 0;
   let productPrice = 0;
   for (const cartItem of cart) {
