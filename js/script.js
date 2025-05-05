@@ -11,15 +11,32 @@ function updateCartQuantity() {
   document.querySelector(".js-cart-quantity").innerHTML = cartQuantity;
 }
 
-fetch("data/menu_lau.json") // Không dùng ../
-  .then((res) => res.json()) // nhớ parse JSON
-  .then((menu) => {
-    const container = document.querySelector(".menu-list");
+loadMenu("hotpot");
 
-    container.innerHTML = "";
+document.querySelectorAll(".menu-item").forEach((item) => {
+  item.addEventListener("click", () => {
+    const type = item.dataset.type;
+    loadMenu(type);
+  });
+});
 
-    menu.forEach((item) => {
-      const HTML = `
+function loadMenu(type) {
+  let file = "";
+  if (type === "hotpot") {
+    file = "data/menu_lau.json";
+  } else if (type === "water") {
+    file = "data/menu_nuoc.json";
+  } else return;
+
+  fetch(file) // Không dùng ../
+    .then((res) => res.json()) // nhớ parse JSON
+    .then((menu) => {
+      const container = document.querySelector(".menu-list");
+
+      container.innerHTML = "";
+
+      menu.forEach((item) => {
+        const HTML = `
         <div class="item">
             <h3>${item.name}</h3>
             <img
@@ -45,33 +62,36 @@ fetch("data/menu_lau.json") // Không dùng ../
           </div>
         `;
 
-      container.innerHTML += HTML;
-    });
+        container.innerHTML += HTML;
+      });
 
-    document.querySelectorAll(".add-btn").forEach((button) => {
-      button.addEventListener("click", () => {
-        const id = parseInt(button.dataset.id);
-        const selectedItem = menu.find((item) => item.id === id);
-        document.querySelector(`.button-quantity-${id}`).classList.add("Added");
-        setTimeout(() => {
+      document.querySelectorAll(".add-btn").forEach((button) => {
+        button.addEventListener("click", () => {
+          const id = parseInt(button.dataset.id);
+          const selectedItem = menu.find((item) => item.id === id);
           document
             .querySelector(`.button-quantity-${id}`)
-            .classList.remove("Added");
-        }, 2000);
+            .classList.add("Added");
+          setTimeout(() => {
+            document
+              .querySelector(`.button-quantity-${id}`)
+              .classList.remove("Added");
+          }, 2000);
 
-        const selectQuantity = document.querySelector(
-          `.select-quantity-${id}`
-        ).value;
+          const selectQuantity = document.querySelector(
+            `.select-quantity-${id}`
+          ).value;
 
-        const sQuantity = Number(selectQuantity);
-        if (selectedItem) addToCart(selectedItem, sQuantity);
-        updateCartQuantity();
+          const sQuantity = Number(selectQuantity);
+          if (selectedItem) addToCart(selectedItem, sQuantity);
+          updateCartQuantity();
+        });
       });
+    })
+    .catch((error) => {
+      console.log("Lỗi khi tải file JSON:", error);
     });
-  })
-  .catch((error) => {
-    console.log("Lỗi khi tải file JSON:", error);
-  });
+}
 
 function logOut() {
   localStorage.removeItem("currentUser");

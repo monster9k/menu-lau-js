@@ -3,7 +3,7 @@
     "id": 1,
     "name": "Lẩu Nấm",
     "price": 120,
-    "image": "images/lau-nam.jpg",
+    "image": "images/lau/lau-nam.jpg",
     "rate": 4.8,
     "note": "Nước lẩu thanh đạm, thích hợp cho người ăn chay và yêu thích nấm."
   },
@@ -11,7 +11,7 @@
     "id": 2,
     "name": "Lẩu Tom Yum",
     "price": 130,
-    "image": "images/lau-tom-yum.jpg",
+    "image": "images/lau/lau-tom-yum.jpg",
     "rate": 4.6,
     "note": "Vị chua cay đậm đà theo phong cách Thái Lan."
   },
@@ -19,7 +19,7 @@
     "id": 3,
     "name": "Lẩu Bulgogi Hàn Quốc",
     "price": 140,
-    "image": "images/lau-bulgogi.jpg",
+    "image": "images/lau/lau-bulgogi.jpg",
     "rate": 4.7,
     "note": "Lẩu bò Bulgogi ngọt dịu, thơm vị thịt và rau củ."
   },
@@ -27,7 +27,7 @@
     "id": 4,
     "name": "Lẩu Miso Nhật Bản",
     "price": 135,
-    "image": "images/lau-miso.jpg",
+    "image": "images/lau/lau-miso.jpg",
     "rate": 4.5,
     "note": "Vị lẩu đậm đà từ tương miso, mềm dịu và dễ ăn."
   },
@@ -35,7 +35,7 @@
     "id": 5,
     "name": "Lẩu Xí Quách",
     "price": 125,
-    "image": "images/lau-xi-quach.jpg",
+    "image": "images/lau/lau-xi-quach.jpg",
     "rate": 4.9,
     "note": "Nước dùng từ xương hầm đậm vị, cực kỳ bổ dưỡng."
   },
@@ -43,7 +43,7 @@
     "id": 6,
     "name": "Lẩu Gà Lá É",
     "price": 110,
-    "image": "images/lau-ga-la-e.jpg",
+    "image": "images/lau/lau-ga-la-e.jpg",
     "rate": 4.7,
     "note": "Hương thơm đặc trưng từ lá é, vị chua nhẹ và thanh mát."
   },
@@ -51,7 +51,7 @@
     "id": 7,
     "name": "Lẩu Cá Tầm Măng Chua",
     "price": 135,
-    "image": "images/lau-ca-tam.jpg",
+    "image": "images/lau/lau-ca-tam.jpg",
     "rate": 4.6,
     "note": "Cá tầm béo ngậy kết hợp măng chua tạo vị hấp dẫn."
   },
@@ -59,7 +59,7 @@
     "id": 8,
     "name": "Lẩu Thái Hải Sản",
     "price": 145,
-    "image": "images/lau-thai-hai-san.jpg",
+    "image": "images/lau/lau-thai-hai-san.jpg",
     "rate": 4.8,
     "note": "Hải sản tươi ngon kết hợp nước dùng chua cay đậm đà."
   },
@@ -67,7 +67,7 @@
     "id": 9,
     "name": "Lẩu Cua Đồng",
     "price": 125,
-    "image": "images/lau-cua-dong.jpg",
+    "image": "images/lau/lau-cua-dong.jpg",
     "rate": 4.5,
     "note": "Đậm đà hương vị quê nhà với nước lẩu cua đồng thơm ngon."
   },
@@ -75,7 +75,7 @@
     "id": 10,
     "name": "Lẩu Bò Nhúng Dấm",
     "price": 130,
-    "image": "images/lau-bo-nhung-dam.jpg",
+    "image": "images/lau/lau-bo-nhung-dam.jpg",
     "rate": 4.7,
     "note": "Vị chua dịu và thanh, bò mềm nhúng lẩu cực bắt vị."
   },
@@ -83,7 +83,7 @@
     "id": 11,
     "name": "Lẩu Riêu Cua Bắp Bò",
     "price": 140,
-    "image": "images/lau-rieu-cua.jpg",
+    "image": "images/lau/lau-rieu-cua.jpg",
     "rate": 4.9,
     "note": "Kết hợp riêu cua béo thơm và bắp bò mềm, hấp dẫn."
   },
@@ -91,7 +91,7 @@
     "id": 12,
     "name": "Lẩu Dê Nhúng Mẻ",
     "price": 150,
-    "image": "images/lau-de.jpg",
+    "image": "images/lau/lau-de.jpg",
     "rate": 4.6,
     "note": "Thịt dê mềm, nhúng mẻ chua nhẹ thơm ngon khó cưỡng."
   },
@@ -99,7 +99,7 @@
     "id": 13,
     "name": "Lẩu Gà Ớt Hiểm",
     "price": 120,
-    "image": "images/lau-ga-ot-hiem.jpg",
+    "image": "images/lau/lau-ga-ot-hiem.jpg",
     "rate": 4.5,
     "note": "Lẩu cay nồng với gà và ớt hiểm, thích hợp cho người mê cay."
   },
@@ -107,7 +107,7 @@
     "id": 14,
     "name": "Lẩu Ghẹ Sữa",
     "price": 155,
-    "image": "images/lau-ghe-sua.jpg",
+    "image": "images/lau/lau-ghe-sua.jpg",
     "rate": 4.8,
     "note": "Ghẹ sữa ngọt thịt, nước lẩu đậm đà vị biển."
   },
@@ -115,7 +115,7 @@
     "id": 15,
     "name": "Lẩu Tứ Xuyên",
     "price": 145,
-    "image": "images/lau-tu-xuyen.jpg",
+    "image": "images/lau/lau-tu-xuyen.jpg",
     "rate": 4.6,
     "note": "Lẩu cay nồng theo phong cách Tứ Xuyên, cho người ăn khỏe."
   }

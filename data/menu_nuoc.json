@@ -1,82 +1,72 @@
 [
   {
-    "id": 1,
-    "ten_mon": "Trà Sữa Matcha",
-    "hinh_anh": "tra-sua-matcha.jpg",
-    "ghi_chu": "Trà sữa matcha thơm ngon, béo ngậy",
-    "gia": 49000,
-    "rate": 4.5
+    "id": 16,
+    "name": "Trà Sữa Matcha",
+    "image": "images/nuoc/tra-sua-matcha.jpg",
+    "note": "Trà sữa matcha thơm ngon, béo ngậy",
+    "price": 49
   },
   {
-    "id": 2,
-    "ten_mon": "Trà Sữa Hạt Lúa Mạch",
-    "hinh_anh": "tra-sua-hat-lua-mach.jpg",
-    "ghi_chu": "Vị hạt lúa mạch đặc trưng, thơm ngon",
-    "gia": 52000,
-    "rate": 4.4
+    "id": 17,
+    "name": "Trà Sữa Hạt Lúa Mạch",
+    "image": "images/nuoc/tra-sua-hat-lua-mach.jpg",
+    "note": "Vị hạt lúa mạch đặc trưng, thơm ngon",
+    "price": 52
   },
   {
-    "id": 3,
-    "ten_mon": "Sinh Tố Bơ",
-    "hinh_anh": "sinh-to-bo.jpg",
-    "ghi_chu": "Mịn màng, thơm béo từ bơ tươi",
-    "gia": 45000,
-    "rate": 4.6
+    "id": 18,
+    "name": "Sinh Tố Bơ",
+    "image": "images/nuoc/sinh-to-bo.jpg",
+    "note": "Mịn màng, thơm béo từ bơ tươi",
+    "price": 45
   },
   {
-    "id": 4,
-    "ten_mon": "Nước Cam Tươi",
-    "hinh_anh": "nuoc-cam-tuoi.jpg",
-    "ghi_chu": "Cam tươi ép, ngọt thanh, bổ dưỡng",
-    "gia": 35000,
-    "rate": 4.3
+    "id": 19,
+    "name": "Nước Cam Tươi",
+    "image": "images/nuoc/nuoc-cam-tuoi.jpg",
+    "note": "Cam tươi ép, ngọt thanh, bổ dưỡng",
+    "price": 35
   },
   {
-    "id": 5,
-    "ten_mon": "Soda Chanh",
-    "hinh_anh": "soda-chanh.jpg",
-    "ghi_chu": "Cay chua, sảng khoái, giúp giải nhiệt",
-    "gia": 39000,
-    "rate": 4.2
+    "id": 20,
+    "name": "Soda Chanh",
+    "image": "images/nuoc/soda-chanh.jpg",
+    "note": "Cay chua, sảng khoái, giúp giải nhiệt",
+    "price": 39
   },
   {
-    "id": 6,
-    "ten_mon": "Trà Đào Cam Sả",
-    "hinh_anh": "tra-dao-cam-sa.jpg",
-    "ghi_chu": "Trà đào thơm lừng, kết hợp với cam và sả",
-    "gia": 42000,
-    "rate": 4.4
+    "id": 21,
+    "name": "Trà Đào Cam Sả",
+    "image": "images/nuoc/tra-dao-cam-sa.jpg",
+    "note": "Trà đào thơm lừng, kết hợp với cam và sả",
+    "price": 42
   },
   {
-    "id": 7,
-    "ten_mon": "Nước Dừa Tươi",
-    "hinh_anh": "nuoc-dua.jpg",
-    "ghi_chu": "Tươi mát, ngọt tự nhiên từ dừa",
-    "gia": 30000,
-    "rate": 4.6
+    "id": 22,
+    "name": "Nước Dừa Tươi",
+    "image": "images/nuoc/nuoc-dua.jpg",
+    "note": "Tươi mát, ngọt tự nhiên từ dừa",
+    "price": 30
   },
   {
-    "id": 8,
-    "ten_mon": "Trà Olong",
-    "hinh_anh": "tra-olong.jpg",
-    "ghi_chu": "Trà olong thơm, đậm vị, nhẹ nhàng",
-    "gia": 42000,
-    "rate": 4.3
+    "id": 23,
+    "name": "Trà Olong",
+    "image": "images/nuoc/tra-olong.jpg",
+    "note": "Trà olong thơm, đậm vị, nhẹ nhàng",
+    "price": 42
   },
   {
-    "id": 9,
-    "ten_mon": "Nước Suối",
-    "hinh_anh": "nuoc-suoi.jpg",
-    "ghi_chu": "Nước suối tinh khiết, giải khát",
-    "gia": 15000,
-    "rate": 4.7
+    "id": 24,
+    "name": "Nước Suối",
+    "image": "images/nuoc/nuoc-suoi.jpg",
+    "note": "Nước suối tinh khiết, giải khát",
+    "price": 15
   },
   {
-    "id": 10,
-    "ten_mon": "Coca",
-    "hinh_anh": "coca.jpg",
-    "ghi_chu": "Coca-Cola ngọt ngào, sảng khoái",
-    "gia": 35000,
-    "rate": 4.5
+    "id": 25,
+    "name": "Coca",
+    "image": "images/nuoc/coca.jpg",
+    "note": "Coca-Cola ngọt ngào, sảng khoái",
+    "price": 35
   }
 ]
