@@ -1,5 +1,6 @@
 import { cart } from "./cart.js";
 import { getProduct } from "./product.js";
+import { formatCurrency } from "./utils/money.js";
 
 console.log(cart);
 export async function renderOrderSummary() {
@@ -61,12 +62,12 @@ export async function renderPaymentSummary() {
 
     <div class="payment-summary-row">
       <div>Estimated tax (10%):</div>
-      <div class="payment-summary-money">${tax}.000 VND</div>
+      <div class="payment-summary-money">${formatCurrency(tax)}.000 VND</div>
     </div>
 
     <div class="payment-summary-row total-row">
       <div>Order total:</div>
-      <div class="payment-summary-money">${total}.000 VND</div>
+      <div class="payment-summary-money">${formatCurrency(total)}.000 VND</div>
     </div>
 
     <button class="place-order-button button-primary">Place your order</button>
