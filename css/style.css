@@ -240,6 +240,10 @@ ul {
   color: white;
 }
 
+.menu-item a {
+  color: white;
+}
+
 .menu-item:hover {
   background-color: #636161;
 }
