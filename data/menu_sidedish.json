@@ -1,0 +1,72 @@
+[
+  {
+    "id": 26,
+    "name": "Khoai Tây Chiên",
+    "image": "images/side_dish/khoai-tay-chien.jpg",
+    "note": "Giòn rụm, vàng ươm, ăn kèm sốt cay hoặc tương cà",
+    "price": 35
+  },
+  {
+    "id": 27,
+    "name": "Cá Viên Chiên",
+    "image": "images/side_dish/ca-vien-chien.jpg",
+    "note": "Cá viên nóng hổi, chấm tương đen",
+    "price": 30
+  },
+  {
+    "id": 28,
+    "name": "Gà Rán",
+    "image": "images/side_dish/ga-ran.jpg",
+    "note": "Gà rán giòn cay, đậm vị",
+    "price": 55
+  },
+  {
+    "id": 30,
+    "name": "Mì Xào Trứng",
+    "image": "images/side_dish/mi-xao-trung.jpg",
+    "note": "Mì gói xào thơm với trứng gà và hành lá",
+    "price": 32
+  },
+  {
+    "id": 31,
+    "name": "Xúc Xích Nướng",
+    "image": "images/side_dish/xuc-xich.jpg",
+    "note": "Xúc xích Đức nướng chín, ăn kèm tương ớt",
+    "price": 35
+  },
+  {
+    "id": 32,
+    "name": "Bò Thêm",
+    "image": "images/side_dish/bo-them.jpg",
+    "note": "Thịt bò thái lát mỏng, thích hợp ăn lẩu hoặc xào",
+    "price": 60
+  },
+  {
+    "id": 33,
+    "name": "Mì Thêm",
+    "image": "images/side_dish/mi-them.jpg",
+    "note": "Mì gói trụng sẵn, thêm vào món chính",
+    "price": 10
+  },
+  {
+    "id": 34,
+    "name": "Cơm Rang",
+    "image": "images/side_dish/com-rang.jpg",
+    "note": "Cơm rang trứng và rau củ, vị đậm đà",
+    "price": 40
+  },
+  {
+    "id": 35,
+    "name": "Cá",
+    "image": "images/side_dish/ca.jpg",
+    "note": "Thịt cá phi lê, phù hợp ăn lẩu hoặc chiên",
+    "price": 45
+  },
+  {
+    "id": 36,
+    "name": "Trứng Lòng Đào",
+    "image": "images/side_dish/trung-long-dao.jpg",
+    "note": "Trứng lòng đào béo ngậy, mềm mịn",
+    "price": 18
+  }
+]

@@ -26,6 +26,8 @@ function loadMenu(type) {
     file = "data/menu_lau.json";
   } else if (type === "water") {
     file = "data/menu_nuoc.json";
+  } else if (type === "Side dish") {
+    file = "data/menu_sidedish.json";
   } else return;
 
   fetch(file) // Không dùng ../
@@ -45,7 +47,7 @@ function loadMenu(type) {
               class="image_hotpot"
             />
             <p>${item.note}</p>
-            <p>Giá: ${item.price.toLocaleString()}.000</p>
+            <p>Giá: ${item.price.toLocaleString()}.000 VND</p>
             <div class="button_quantity button-quantity-${item.id}">
               <button class="add-btn" data-id="${item.id}">Add to cart</button>
               <select id="quantity" name="quantity" class="select_quantity select-quantity-${
