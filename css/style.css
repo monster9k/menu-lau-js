@@ -30,7 +30,7 @@ header {
   justify-content: space-between;
   align-items: center;
   background-color: var(--main-color); /* đỏ đậm */
-  padding: 30px 20px;
+  padding: 25px 20px;
   text-align: center;
   color: white;
   position: relative;
@@ -40,6 +40,7 @@ header {
   top: 0;
   left: 0;
   z-index: 1000;
+  height: 105px;
 }
 
 header h1 {
@@ -127,6 +128,7 @@ button:hover {
 
 .ava-menu {
   width: 150px;
+  height: 40px;
   display: flex;
   justify-content: center; /* ngang */
   align-items: center;
@@ -138,8 +140,8 @@ button:hover {
 }
 
 .avatar {
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   border-radius: 50%;
   cursor: pointer;
 }
