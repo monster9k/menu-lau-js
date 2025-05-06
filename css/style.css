@@ -64,7 +64,11 @@ nav a {
   transition: 0.3s;
 }
 
-nav a:hover,
+nav a:hover {
+  font-weight: bold;
+  color: #ff4d4d;
+}
+
 nav button:hover {
   font-weight: bold;
   text-decoration: underline;
