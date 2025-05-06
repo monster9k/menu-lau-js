@@ -124,7 +124,7 @@ window.addEventListener("DOMContentLoaded", () => {
           <ul class="dropdown" id="dropdown">
               <li id="user_name" style="font-weight: bold; pointer-events: none;">👤 ${currentUser}</li>
               <li><a href="#">🏠 Trang chủ</a></li>
-              <li id="Gio_hang">🛒 Giỏ hàng</li>
+              <li id="Gio_hang"> <a href="checkout.html">🛒 Giỏ hàng </a></li>
               <li><a href="#" onclick="logOut()">🚪 Đăng xuất</a></li>
           </ul>
       </div>
